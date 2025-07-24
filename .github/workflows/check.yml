@@ -2,7 +2,8 @@ name: Check for AC
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0-30/2 0 * * 1-5'
+    #- cron: '0-30/2 0 * * 1-5'
+    - cron: '0,2,4,6,8,10,12,14,16,18,20 0 * * 1-5'
 jobs:
   check:
     runs-on: ubuntu-latest
